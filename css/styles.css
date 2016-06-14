@@ -1,0 +1,28 @@
+#timetable{
+  display: none;
+}
+
+#ticket {
+  display: none;
+}
+.age {
+  width: 27%;
+  display: inline-block;
+  margin: 3% 5% 5% 0;
+}
+
+.movie {
+  margin: 3% 5% 5% 0;
+}
+
+label > input{
+  visibility: hidden;
+  position: absolute;
+}
+label > input + p {
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + p {
+  border:2px solid #f00;
+}

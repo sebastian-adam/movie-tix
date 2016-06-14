@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+    <link rel="stylesheet" href="css/styles.css" type='text/css'>
+    <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Buy Movie Tickets Here</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+
+      </div>
+      <div class="main">
+        <form id='movieForm'>
+          <div class="row">
+            <div class="col-sm-6">
+              <h4>Movie</h4>
+              <select onchange="$('#timetable').show();" class=" movie form-control" id="movieTitle">
+                <option selected disabled>Please select</option>
+                <option>Finding Dory</option>
+                <option>Conjuring 2</option>
+                <option>Independence Day: Resurgence</option>
+                <option>Warcraft</option>
+              </select>
+              <h4>Number of Tickets</h4>
+              <h5>Adult = $15   Youth = $10   Senior = $8   ---   Save $2 dollars on any matinee</h5>
+              <div class="age form-group">
+                <input placeholder="Adult" type="text" name="age" id="adult" class="form-control">
+              </div>
+              <div class="age form-group">
+                <input placeholder="Youth (under 12)" type="text" name="age" id="youth" class="form-control">
+              </div>
+              <div class="age form-group">
+                <input placeholder="Senior 60+" type="text" name="age" id="senior" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-info">Enter</button>
+            </div>
+            <div class="col-sm-6">
+              <div id="timetable">
+                <div class="col-sm-4">
+                  <h4>Matinee</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="12">
+                      <p>12PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="1">
+                      <p>1PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="2">
+                      <p>2PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="3">
+                      <p>3PM</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <h4>Full Fare</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="4">
+                      <p>4PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="5">
+                      <p>5PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="6">
+                      <p>6PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="7">
+                      <p>7PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="8">
+                      <p>8PM</p>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="choice" value="9">
+                      <p>9PM</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="jumbotron" id="ticket">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
